@@ -1,0 +1,20 @@
+{
+  "cache": "./.builder/builder-json-cache",
+  "output": "./application",
+  "logs": "./.builder/logs",
+  "typescript": true,
+  "contents": false,
+  "joinedMeta": false,
+  "less": false,
+  "modules": [
+    {
+      "name": "Ex",
+      "path": "./Ex",
+      "required": true
+    },
+    {
+      "name": "test",
+      "path": "./test"
+    }
+  ]
+}

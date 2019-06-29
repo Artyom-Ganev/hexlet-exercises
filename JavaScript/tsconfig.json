@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": "application",
+    "types" : ["requirejs"]
+  },
+  "include": [
+    "Ex/**/*.ts"
+  ]
+}
