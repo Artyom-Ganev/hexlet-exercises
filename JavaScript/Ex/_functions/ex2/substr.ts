@@ -1,4 +1,4 @@
-const normalizedSubstring = (str, start, count) => {
+const normalizedSubstring = (str: string, start: number, count: number): string => {
   let result = '';
   for (let i = start; i < (start + count); i++) {
     result += str[i];
@@ -13,7 +13,7 @@ const normalizedSubstring = (str, start, count) => {
  * @param {Number} sourceLength substring length
  * @return {String} substring
  */
-const substr = (str, sourceIndex = 0, sourceLength = str.length) => {
+const substr = (str: string, sourceIndex: number = 0, sourceLength: number = str.length): string => {
   const strEnd = str.length - 1;
   const count = sourceLength < 0 ? 1 : sourceLength;
   const index = sourceIndex < 0 ? 0 : sourceIndex;
