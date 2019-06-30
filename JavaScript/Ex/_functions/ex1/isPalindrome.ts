@@ -5,7 +5,7 @@ const MIN_LENGTH = 2;
  * @param {String} str
  * @return {Boolean} check result
  */
-const isPalindrome = (str) => {
+const isPalindrome = (str: string): boolean => {
     const length = str.length;
     if (length < MIN_LENGTH) {
         return true;
