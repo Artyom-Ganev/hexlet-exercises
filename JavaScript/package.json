@@ -18,10 +18,8 @@
     "Ex/*"
   ],
   "scripts": {
-    "build": "npm run build:typescript && npm run build:units && npm run build:application",
     "build:typescript": "saby-typescript --install --tsconfig=tsconfig.base.json --tslint=Types/tslint.json",
     "build:units": "saby-units --install",
-    "build:application": "node node_modules/gulp/bin/gulp.js --gulpfile=node_modules/sbis3-builder/gulpfile.js build --config=../../builder.json --log-level=warning -LLLL",
     "start": "node node_modules/saby-units/cli/server",
     "test": "saby-units %NODE_DEBUG_OPTION% --isolated",
     "test:node": "saby-units --isolated --report",
@@ -33,7 +31,7 @@
   "saby-units": {
     "moduleType": "amd",
     "tests": "test",
-    "root": "application",
+    "root": ".",
     "initializer": "init-testing.js",
     "url": {
       "port": 1025
@@ -54,7 +52,6 @@
   "devDependencies": {
     "saby-typescript": "git+https://github.com:saby/TypeScript.git#rc-19.500",
     "saby-units": "git+https://github.com/saby/Units.git#rc-19.500",
-    "sbis3-builder": "git+https://github.com/saby/Builder.git#rc-19.500",
     "tslint": "5.18.0",
     "typescript": "3.5.2"
   }
