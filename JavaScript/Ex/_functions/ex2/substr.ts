@@ -12,6 +12,7 @@ const normalizedSubstring = (str: string, start: number, count: number): string 
  * @param {Number} sourceIndex starting of substring
  * @param {Number} sourceLength substring length
  * @return {String} substring
+ * @link https://ru.hexlet.io/code_reviews/123286#readme
  */
 const substr = (str: string, sourceIndex: number = 0, sourceLength: number = str.length): string => {
   const strEnd = str.length - 1;
