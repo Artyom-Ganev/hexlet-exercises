@@ -6,7 +6,7 @@ const MIN_LENGTH = 2;
  * @return {Boolean} check result
  * @link https://ru.hexlet.io/code_reviews/123049#readme
  */
-const isPalindrome = (str: string): boolean => {
+const isPalindrome = (str: string = ''): boolean => {
     const length = str.length;
     if (length < MIN_LENGTH) {
         return true;

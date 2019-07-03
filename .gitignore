@@ -1,5 +1,4 @@
 artifacts/
-application/
 .builder
 node_modules/
 .idea

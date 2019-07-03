@@ -32,7 +32,6 @@
     "moduleType": "amd",
     "tests": "test",
     "root": ".",
-    "initializer": "init-testing.js",
     "url": {
       "port": 1025
     }
@@ -50,7 +49,8 @@
     "report-dir": "./artifacts/coverage"
   },
   "devDependencies": {
-    "saby-typescript": "git+https://github.com:saby/TypeScript.git#rc-19.500",
+    "@types/mocha": "5.2.7",
+    "saby-typescript": "git+https://github.com/saby/TypeScript.git#rc-19.500",
     "saby-units": "git+https://github.com/saby/Units.git#rc-19.500",
     "tslint": "5.18.0",
     "typescript": "3.5.2"
