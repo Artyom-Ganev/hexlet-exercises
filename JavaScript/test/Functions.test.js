@@ -7,14 +7,14 @@ define([
 
    describe('Functions/ex1/isPalindrome', function () {
       it('should return true', function () {
-         assert.equal(functions.isPalindrome(), true);
-         assert.equal(functions.isPalindrome('a'), true);
-         assert.equal(functions.isPalindrome('abba'), true);
+         assert.isTrue(functions.isPalindrome());
+         assert.isTrue(functions.isPalindrome('a'));
+         assert.isTrue(functions.isPalindrome('abba'));
       });
 
       it('should return false', function () {
-         assert.equal(functions.isPalindrome('ab'), false);
-         assert.equal(functions.isPalindrome('abc'), false);
+         assert.isFalse(functions.isPalindrome('ab'));
+         assert.isFalse(functions.isPalindrome('abc'));
       });
    });
 });

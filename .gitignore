@@ -6,3 +6,4 @@ node_modules/
 !*.test.js
 !init-testing.js
 tsconfig.base.json
+/JavaScript/.nyc_output/

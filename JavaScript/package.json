@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@types/mocha": "5.2.7",
+    "@types/chai": "4.1.7",
     "saby-typescript": "git+https://github.com/saby/TypeScript.git#rc-19.500",
     "saby-units": "git+https://github.com/saby/Units.git#rc-19.500",
     "tslint": "5.18.0",
