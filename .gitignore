@@ -1,7 +1,11 @@
+# Idea files
+.idea
+*.iml
+
+# JS projects
 artifacts/
 .builder
 node_modules/
-.idea
 *.js
 !*.test.js
 !init-testing.js
