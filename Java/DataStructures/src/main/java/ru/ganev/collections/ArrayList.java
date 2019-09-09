@@ -8,6 +8,8 @@ import java.util.Iterator;
  */
 public class ArrayList<T> implements Collection<T> {
 
+    private T[] array;
+
     @Override
     public int size() {
         return 0;
