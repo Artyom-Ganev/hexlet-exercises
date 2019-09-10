@@ -11,3 +11,6 @@ node_modules/
 !init-testing.js
 tsconfig.base.json
 /JavaScript/.nyc_output/
+
+# Java projects
+target/
