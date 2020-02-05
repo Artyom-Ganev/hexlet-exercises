@@ -3,14 +3,5 @@
 *.iml
 
 # JS projects
-artifacts/
-.builder
 node_modules/
-*.js
-!*.test.js
-!init-testing.js
-tsconfig.base.json
-/JavaScript/.nyc_output/
-
-# Java projects
-target/
+build
