@@ -9,6 +9,7 @@
   "scripts": {
     "build": "babel src -d build",
     "test": "jest --colors",
+    "precommit": "lint-staged",
     "prettier": "prettier -c \"src/**/*.js\"",
     "prettier-fix": "prettier -c --write \"src/**/*.js\"",
     "lint": "eslint \"src/**/*.js\" --fix",
@@ -26,7 +27,21 @@
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
     "eslint-plugin-jest": "23.6.0",
+    "husky": "4.2.1",
     "jest": "25.1.0",
+    "lint-staged": "10.0.7",
     "prettier": "1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint-fix",
+      "npm run lint",
+      "npm run prettier-fix"
+    ]
   }
 }

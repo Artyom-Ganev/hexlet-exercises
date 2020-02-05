@@ -9,9 +9,6 @@ const HALF = 180;
  * @link https://ru.hexlet.io/challenges/intro_to_programming_angle_difference
  */
 export const diff = (ang1, ang2) => {
-  if (ang1 === ang2) {
-    return 0;
-  }
   const difference = Math.abs(ang1 - ang2);
   return difference > HALF ? FULL - difference : difference;
 };
