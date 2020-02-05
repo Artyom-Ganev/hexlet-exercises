@@ -12,8 +12,8 @@
     "precommit": "lint-staged",
     "prettier": "prettier -c \"src/**/*.js\"",
     "prettier-fix": "prettier -c --write \"src/**/*.js\"",
-    "lint": "eslint \"src/**/*.js\" --fix",
-    "lint-fix": "eslint \"src/**/*.js\""
+    "lint": "eslint \"src/**/*.js\"",
+    "lint-fix": "eslint \"src/**/*.js\" --fix"
   },
   "dependencies": {
     "lodash": "4.17.15"
