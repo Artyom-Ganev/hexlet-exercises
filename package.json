@@ -9,28 +9,24 @@
   "scripts": {
     "build": "babel src -d build",
     "test": "jest --colors",
-    "precommit": "lint-staged",
-    "prettier": "prettier -c \"src/**/*.js\"",
-    "prettier-fix": "prettier -c --write \"src/**/*.js\"",
-    "lint": "eslint \"src/**/*.js\"",
-    "lint-fix": "eslint \"src/**/*.js\" --fix"
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "lodash": "4.17.15"
   },
   "devDependencies": {
-    "@babel/core": "7.8.4",
+    "@babel/core": "7.9.0",
     "@babel/cli": "7.8.4",
-    "@babel/preset-env": "7.8.4",
-    "babel-eslint": "10.0.3",
-    "babel-jest": "25.1.0",
+    "@babel/preset-env": "7.9.5",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "25.2.6",
     "eslint": "6.8.0",
-    "eslint-config-prettier": "6.10.0",
-    "eslint-plugin-jest": "23.6.0",
-    "husky": "4.2.1",
-    "jest": "25.1.0",
-    "lint-staged": "10.0.7",
-    "prettier": "1.19.1"
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-jest": "23.8.2",
+    "husky": "4.2.3",
+    "jest": "25.2.7",
+    "lint-staged": "10.1.2",
+    "prettier": "2.0.4"
   },
   "husky": {
     "hooks": {
@@ -39,9 +35,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run lint-fix",
-      "npm run lint",
-      "npm run prettier-fix"
+      "eslint --fix",
+      "prettier --write"
     ]
   }
 }
