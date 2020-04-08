@@ -9,11 +9,7 @@
   "scripts": {
     "build": "babel src -d build",
     "test": "jest --colors",
-    "precommit": "lint-staged",
-    "prettier": "prettier -c \"src/**/*.js\"",
-    "prettier-fix": "prettier -c --write \"src/**/*.js\"",
-    "lint": "eslint \"src/**/*.js\"",
-    "lint-fix": "eslint \"src/**/*.js\" --fix"
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "lodash": "4.17.15"
@@ -39,9 +35,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run lint-fix",
-      "npm run lint",
-      "npm run prettier-fix"
+      "eslint --fix",
+      "prettier --write"
     ]
   }
 }
